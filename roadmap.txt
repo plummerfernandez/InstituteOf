@@ -1,0 +1,10 @@
+# A notepad of ideas on where this project is going 
+
+- generate name (done)
+
+- make other py script
+- this script gets the name of the institution -
+- find definitions of noun and adj used. 
+- generate field of interest (get related words?)
+
+- maybe mine google scholar for paper titles?

@@ -102,6 +102,7 @@ def Main():
 	try:
 		localdir = os.path.dirname(os.path.realpath(__file__))
 		print localdir
+		print localdir
 		config.read(localdir + '/settings.cfg')
 		print "[+] Read settings"
 	except:
