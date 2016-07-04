@@ -1,7 +1,7 @@
 ### InstitutesOf
 https://twitter.com/institutesOf
 
-# A twitter Bot that generates Institutions.
+# A bot that generates Institutions.
 
 Licensed under a GNU GENERAL PUBLIC LICENSE
 
