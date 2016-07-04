@@ -10,7 +10,7 @@ Made at the retreat in Arnhem.
 
 To make a twitter bot you open up an account and request a 
 API_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET
-by registering your app. https://app.twitter.com
+by registering your app. https://apps.twitter.com
 
 Put those details into a settings.cfg file (see sample):
 
