@@ -112,9 +112,9 @@ def Main():
 	print '[+] Twitter client requested' 
 
 	twitter = Twython(tw_key, #API_KEY
-				  tw_secret,  #APP_SECRET
-                  tw_token,   #OAUTH_TOKEN
-                  tw_tsecret) #OAUTH_TOKEN_SECRET
+					tw_secret,  #APP_SECRET
+					tw_token,   #OAUTH_TOKEN
+					tw_tsecret) #OAUTH_TOKEN_SECRET
 
 	institute = genInstitute()
 
