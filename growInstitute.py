@@ -2,29 +2,38 @@
 
 #growInstitute.py
 
-import random, time, os
+import random, time, os, datetime
 from splinter import Browser
 
+
+def centerText(entry, linelength):
+	### center title
+	length = len(entry)
+	spacerLen = int((linelength - length)/2)
+	spacer = ""
+	for s in range(spacerLen):
+		spacer = spacer + " "
+
+	return spacer+entry
 
 
 def docEntry(localdir, name, text, write):
 	fullpath = localdir + "/institutions/"+name
-	print fullpath
+	#print fullpath
 	with open(fullpath, write) as myfile:
 		myfile.write(text)
 	myfile.close()
 
 
+### Important function for building "The History of the Institution"
+def getTimeStamp():
+	ts = time.time()
+	st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+	return st
 
 def formatHeader(entry,s1): 
 	### center title
-	length = len(entry)
-	spacerLen = int((70 - length)/2)
-	spacer = ""
-	for s in range(spacerLen):
-		spacer = spacer + " "
-
-
+	ct = centerText(entry,70)
 	### Detail inspired by Thricedotted 'The Seeker':
 	header = []
 	for x in range(5):
@@ -40,12 +49,8 @@ def formatHeader(entry,s1):
 	for h in header:
 		headString = headString + h
 
-	# linebreak = "\n"
-	# for x in range(35):
-	# 	linebreak = linebreak + "- "
-
 	# linebreak = linebreak + "\n \n"
-	responseheader = headString +'\n'+ '\n'+ spacer+ entry +'\n'+'\n'+ '\n'+headString
+	responseheader = headString +'\n'+ '\n'+ ct +'\n'+'\n'+ '\n'+headString + '\n'+ '\n'
 	#formattedEntry = responseheader + linebreak
 	return responseheader
 
@@ -77,7 +82,7 @@ def Main():
 	localdir = os.path.dirname(os.path.realpath(__file__))
 
 	path = localdir + "/institutions.txt"
-	print path
+	#print path
 	inst = getLastInstitute(path)
 	instwords = inst.split(' ')
 	lastword = instwords[len(instwords)-1]
@@ -100,6 +105,10 @@ def Main():
 	random.shuffle(symbols)
 	header = formatHeader(nameInCaps, symbols[0])
 	docEntry(localdir,docname, header,'a')
+
+	founded = "Founded " + str(getTimeStamp())
+	foundedCentered = centerText(founded,70)
+	docEntry(localdir,docname, foundedCentered,'a')
 
 	#print lastword
 	# b= Browser('chrome')
