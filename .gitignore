@@ -1,0 +1,20 @@
+# Do not track the settings as it contains passwords
+settings.cfg
+
+# Do not track data & objects
+downloads/
+openzips/
+tempzips/
+mashups/
+
+
+# Python compiled
+*.pyc
+
+# Blender cache
+*.blend1
+*.blend2
+
+*.obj
+*.jpg
+*.mtl
