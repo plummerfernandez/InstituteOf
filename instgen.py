@@ -69,10 +69,7 @@ def upcase_first_letter(s):
 	#print s[0]
 	return newstr
 
-## head of, expert on, 
-# research, communication, archive, production, presentation, exhibitions, evening programme, 
-## at the  
-
+# Generate an institution
 def genInstitute():
 	
 	adj = None
@@ -93,7 +90,6 @@ def genInstitute():
 	random.shuffle(instituteTypes)
 	institute = "The " +  upcase_first_letter(adj[0]) + " " + instituteTypes[0] + upcase_first_letter(typs)
 	return institute
-
 
 
 def Main():

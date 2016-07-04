@@ -1,4 +1,4 @@
-# A notepad of ideas on where this project is going 
+ --A notepad of ideas on where this project is going -- 
 
 - generate name (done)
 
@@ -8,3 +8,19 @@
 - generate field of interest (get related words?)
 
 - maybe mine google scholar for paper titles?
+
+- The history of the institution - not over years but over seconds (with same output)
+- generate organs such as:
+## head of, expert on, 
+# research, communication, archive, production, presentation, exhibitions, evening programme, 
+
+
+
+-- Wider thoughts --
+# 'destabilise the institution to make it relevant' - Luis R-F
+# Also:
+http://arstechnica.com/the-multiverse/2016/06/an-ai-wrote-this-movie-and-its-strangely-moving/ 
+
+Currently reading about a relevant sci-fi script generator, and how it "exists somewhere in between author and tool, writer and regurgitator."  It consequently identifies (and 'trains' its creators about) tired tropes in sci-fi.  
+
+ "A funhouse mirror to hold up to various bodies of cultural content and reflect what they are."
