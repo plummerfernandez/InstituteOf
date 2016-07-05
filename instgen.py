@@ -122,6 +122,11 @@ def Main():
 	appendtoTxt(institute, localdir)
 	tweetStatus(twitter, institute)
 
+	### now generate document
+	pythonPath = localdir+"/growInstitute.py"
+	os.system('python '+ pythonPath)
+
+
 
 if __name__ == '__main__':
 	Main()
